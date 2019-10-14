@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "@testing-library/react": "^9.3.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-scripts": "2.1.5"
   },
   "scripts": {

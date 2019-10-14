@@ -1,6 +1,7 @@
 // Test away!
 import React from 'react'
 import * as rtl from 'react-testing-library'
+import { render, fireEvent } from '@testing-library/react';
 import 'jest-dom/extend-expect'
 import Display from './Display'
 afterEach(rtl.cleanup)
