@@ -17,10 +17,14 @@ describe("Dashboard", () => {
 
 // firing event - sanity test passed 
 test('display panel locked and unlock render correctly', () => {
-     const { getByText,findByText } = render(
+     const { getByText } = render(
           <Dashboard />
      )
 
+     // sanity tests pass!!!! 
      fireEvent.click(getByText(/Close Gate/i));
      expect(getByText(/Closed/i))
+
+     fireEvent.click(getByText(/Open Gate/i));
+     expect(getByText(/Open/i))
 })
