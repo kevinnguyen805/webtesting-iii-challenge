@@ -83,3 +83,13 @@ test('clicking lock gate will enable close gate button functionality', () => {
      fireEvent.click(getByText(/Lock Gate/i))
      expect(getByText(/Close Gate/i)).not.toBeDisabled()
 })
+test('Unlock button will be falsy', () => {
+     const disabledMock = jest.fn()
+     const {getByText} = render(
+          <Controls disabled={disabledMock} />
+     )
+
+     fireEvent.click(getByText(/Close Gate/i))
+     fireEvent.click(getByText(/Lock Gate/i))
+     expect(disabledMock).toBeFalsy();
+})
